@@ -1,0 +1,108 @@
+############################
+# Maven
+############################
+target/
+!.mvn/wrapper/maven-wrapper.jar
+
+############################
+# Gradle (if ever used)
+############################
+.gradle/
+build/
+
+############################
+# Java
+############################
+*.class
+*.log
+
+############################
+# Spring Boot
+############################
+spring.log
+hs_err_pid*
+
+############################
+# Logs
+############################
+logs/
+*.log
+
+############################
+# Environment files (IMPORTANT)
+############################
+.env
+.env.*
+application-*.yml
+application-*.properties
+
+# Allow default config
+!application.yml
+!application.properties
+
+############################
+# IDE - IntelliJ IDEA
+############################
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+############################
+# IDE - Eclipse / STS
+############################
+.project
+.classpath
+.settings/
+.factorypath
+
+############################
+# VS Code
+############################
+.vscode/
+
+############################
+# OS files
+############################
+.DS_Store
+Thumbs.db
+
+############################
+# Docker
+############################
+docker-compose.override.yml
+**/docker-compose.override.yml
+
+############################
+# Kubernetes / Helm (optional)
+############################
+*.tgz
+charts/**/charts/
+charts/**/tmp/
+
+############################
+# Test reports
+############################
+surefire-reports/
+failsafe-reports/
+
+############################
+# Lombok
+############################
+lombok.config
+
+############################
+# Node (if frontend inside repo)
+############################
+node_modules/
+dist/
+
+############################
+# Security
+############################
+*.keystore
+*.jks
+*.p12
+*.pem
+*.crt

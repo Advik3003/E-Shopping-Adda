@@ -1,0 +1,17 @@
+server:
+  port: 9090
+
+spring:
+  boot:
+    admin:
+      ui:
+        title: Microservices Admin Dashboard
+
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
+
+
+

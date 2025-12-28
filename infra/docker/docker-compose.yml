@@ -1,0 +1,49 @@
+version: '3.9'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: ecommerce-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: product_db
+      MYSQL_USER: ecommerce_user
+      MYSQL_PASSWORD: ecommerce_user
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - ecommerce-network
+
+volumes:
+  mysql_data:
+
+networks:
+  ecommerce-network:
+
+
+#version: '3.9'
+#
+#services:
+#  mysql:
+#    build: ./mysql
+#    container_name: ecommerce-mysql
+#    restart: always
+#    environment:
+#      MYSQL_ROOT_PASSWORD: root
+#      MYSQL_USER: ecommerce_user
+#      MYSQL_PASSWORD: ecommerce_pass
+#    ports:
+#      - "3306:3306"
+#    volumes:
+#      - mysql_data:/var/lib/mysql
+#    networks:
+#      - ecommerce-network
+#
+#volumes:
+#  mysql_data:
+#
+#networks:
+#  ecommerce-network:

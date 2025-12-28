@@ -1,0 +1,22 @@
+ecommerce:
+  env: dev
+  message: "Central Config Loaded Successfully"
+
+logging:
+  level:
+    root: INFO
+
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:9090
+        instance:
+          service-base-url: http://localhost:8080
+#          prefer-ip: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
